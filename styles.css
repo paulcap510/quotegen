@@ -1,0 +1,224 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color, #f5f5f5);
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: var(--bg-color-light);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--quote-text-color-light);
+}
+
+#toggle-mode-button {
+    background-color: var(--button-bg-color-light);
+    color: var(--button-text-color-light);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Lato', sans-serif;
+}
+
+#toggle-mode-button:hover {
+    background-color: var(--button-hover-bg-color-light);
+}
+
+
+
+.container {
+    max-width: 500px;
+    margin: 30px auto 0; 
+    padding: 20px;
+    background-color: var(--container-bg-color, #fff);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.quote {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--quote-text-color, #333);
+}
+
+#quote-text {
+    font-style: italic;
+}
+
+#generate-button {
+    background-color: var(--button-bg-color, #ff5733);
+    color: var(--button-text-color, #fff);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+}
+
+#generate-button:hover {
+    background-color: #4b3731; 
+    color: #ffffff;
+}
+
+
+
+
+:root {
+    --bg-color-light: #f5f5f5;
+    --container-bg-color-light: #fff;
+    --quote-text-color-light: #333;
+    --button-bg-color-light: #007bff;
+    --button-text-color-light: #fff;
+    --button-hover-bg-color-light: #0056b3;
+}
+
+body.dark-mode {
+    --bg-color: #333;
+    --container-bg-color: #444;
+    --quote-text-color: #fff;
+    --button-bg-color: #ff5733;
+    --button-text-color: #fff; 
+    --button-hover-bg-color: #ff4a19;
+}
+
+
+.social-sharing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: 'Times New Roman', sans-serif; 
+}
+
+.social-sharing a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Lato', sans-serif; 
+}
+
+.social-sharing a {
+    color: #333; 
+}
+
+body.dark-mode .social-sharing a {
+    color: #fff; 
+}
+
+.social-sharing a:hover {
+    background-color: #007bff;
+    color: #fff; 
+    border-color: #007bff;
+}
+    
+
+
+
+
+
+.social-sharing a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Lato', sans-serif; 
+}
+
+
+
+
+
+
+#save-button, #generate-list-button {
+    background-color: var(--button-bg-color, #33ffa3);
+    color: var(--button-text-color, #000000);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+}
+
+#save-button:hover, #generate-list-button:hover {
+    background-color: var(--button-bg-color, #000000);
+    color: var(--button-text-color, #33ffa3);
+}
+
+
+body.dark-mode #save-button,
+body.dark-mode #generate-list-button {
+    background-color: var(--button-bg-color-dark, #2b5992);
+    color: var(--button-text-color-dark, #ffffff);
+}
+
+body.dark-mode #save-button:hover,
+body.dark-mode #generate-list-button:hover {
+    background-color: var(--button-bg-color-dark-hover, #ff0808);
+    color: var(--button-text-color-dark-hover, #ffffff);
+}
+
+
+
+.favorites-container {
+    height: auto;
+    padding: 20px;
+}
+
+body.dark-mode .favorites-container {
+    color: white;
+}
+
+#favorite-quotes-list {
+    margin-top: 20px; 
+}
+
+
+
+
+.quote-buttons {
+    padding-left: 20px; 
+    margin-top: 30px;
+}
+
+.favorite-quotes-list {
+    font-size: 2rem;
+}
+
+
+#favorite-quotes-list li {
+    font-size: 20px;
+    text-align: left; 
+    font-style: italic; 
+}
+body.dark-mode #favorite-quotes-list li {
+    color: #fff; 
+}
